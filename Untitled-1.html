@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Responsiva</title>
+    <!-- Link do Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        /* Estilizando o corpo da página */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Estilizando o cabeçalho */
+        header {
+            background-image: linear-gradient(45deg, #007bff, #0056b3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        /* Estilizando a navegação */
+        nav ul {
+            margin-top: 10px;
+        }
+
+        nav .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilizando as seções */
+        section h2 {
+            font-size: 2rem;
+            color: #343a40;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Estilizando o rodapé */
+        footer {
+            background-color: #343a40;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho com Menu de Navegação -->
+    <header class="text-white text-center py-4">
+        <h1>Minha Página Web</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corpo da Página com Containers do Bootstrap -->
+    <main class="container mt-5">
+        <section class="container bg-light p-4 mb-5">
+            <h2>Introdução ao Bootstrap</h2>
+            <p>Bootstrap é um dos frameworks front-end mais populares para desenvolvimento web. Ele permite que os desenvolvedores criem páginas responsivas de maneira rápida e eficiente, fornecendo uma ampla gama de componentes prontos, como botões, formulários, containers, e muito mais. Nesta seção, vamos explorar os fundamentos do Bootstrap e como ele pode ser usado para construir layouts modernos e dinâmicos.</p>
+        </section>
+
+        <section class="container bg-secondary text-white p-4 mb-5">
+            <h2>Benefícios de Usar Containers</h2>
+            <p>Os containers são a base de todo o layout no Bootstrap. Eles proporcionam uma forma de organizar os elementos da página de maneira responsiva, garantindo que o conteúdo se ajuste adequadamente a diferentes tamanhos de tela. Além disso, os containers podem ser usados para centralizar o conteúdo, definir espaçamentos e garantir que os elementos fiquem alinhados corretamente.</p>
+        </section>
+
+        <section class="container bg-light p-4 mb-5">
+            <h2>Criando Páginas Responsivas</h2>
+            <p>Com o aumento do uso de dispositivos móveis, a criação de páginas responsivas se tornou essencial. Usando o sistema de grids do Bootstrap, é possível garantir que o layout da página se adapte a qualquer resolução, seja em smartphones, tablets ou desktops. A flexibilidade proporcionada por esse sistema facilita o desenvolvimento de páginas que oferecem uma ótima experiência ao usuário em qualquer dispositivo.</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="text-white text-center">
+        <p>&copy; <span id="anoAtual"></span> Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script para obter o ano atual -->
+    <script>
+        document.getElementById('anoAtual').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Scripts do Bootstrap via CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
